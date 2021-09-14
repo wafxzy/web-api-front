@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {SharedService} from 'src/app/shared.service';
 @Component({
   selector: 'app-asiatours',
   templateUrl: './asiatours.component.html',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsiatoursComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:SharedService) { }
+
+AsiatoursList:any=[];
 
   ngOnInit(): void {
+    this.refreshAsiatours();
   }
+
+refreshAsiatours(){
+  this.service.getAsiaList().subscribe(data=>{
+    this.AsiatoursList=data
+  
+  });
+}
 
 }

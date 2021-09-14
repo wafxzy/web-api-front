@@ -1,1 +1,23 @@
 <p>asiatours works!</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th>depid</th>
+          <th>titel</th>
+          <th>descr</th>
+          <th>stars</th>
+          <th>price</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataitem of AsiatoursList">
+            <td>{{dataitem.id_t}}</td>
+            <td>{{dataitem.title}}</td>
+            <td>{{dataitem.description_t}}</td>
+            <td>{{dataitem.stars}}</td>
+            <td>{{dataitem.price}}</td>
+        </tr>
+    </tbody>
+</table>
