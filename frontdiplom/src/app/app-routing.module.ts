@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import{ToulookComponent} from './toulook/toulook.component';
 import {AfricatoursComponent} from './africatours/africatours.component';
 import {EuropetoursComponent} from './europetours/europetours.component';
 import {AsiatoursComponent} from './asiatours/asiatours.component';
@@ -22,8 +23,8 @@ const routes: Routes = [
 {path:'southamericatours', component:SouthamericatoursComponent  },
 {path:'contacs', component:ContacsComponent  },
 {path:'helpinfo', component:HelpinfoComponent  },
-{path:'register', component:RegisterComponent  }
-
+{path:'register', component:RegisterComponent  },
+{path:'tour/:id', component:ToulookComponent  }
 ];
 
 @NgModule({
