@@ -10,11 +10,12 @@ export class SharedService {
    
   constructor(private http:HttpClient) { }
 getAsiaList():Observable<any[]>{
-return this.http.get<any>(this.ApiUrl+'/asiatours');
+return this.http.get<any>(this.ApiUrl+'/alltours');
 }
-getTourCurrentList(id:any):Observable<any[]>{
+
+getTourCurrentList(id:any){
   
-  return this.http.get<any>(this.ApiUrl+'/asiatours/'+id);
+  return this.http.get<any>('http://localhost:5000/api/alltours/'+id);
   
   
   }

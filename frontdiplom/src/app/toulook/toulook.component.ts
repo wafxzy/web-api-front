@@ -14,8 +14,8 @@ export class ToulookComponent implements OnInit {
 id:any;
 tour:any;
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params=>
-      {this.id=params.get('id');
+    this.route.paramMap.subscribe(params=>{
+      this.id=params.get('id');
     });
     this.getTourById(this.id);
   }
