@@ -14,7 +14,7 @@ return this.http.get<any>(this.ApiUrl+'/asiatours');
 }
 getTourCurrentList(id:any):Observable<any[]>{
   
-  return this.http.get<any>(this.ApiUrl+'/alltours/'+id);
+  return this.http.get<any>(this.ApiUrl+'/asiatours/'+id);
   
   
   }

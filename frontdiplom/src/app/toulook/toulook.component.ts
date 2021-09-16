@@ -11,19 +11,17 @@ export class ToulookComponent implements OnInit {
   constructor(private route:ActivatedRoute,
     private tourService:SharedService
     ) { }
-
+id:any;
+tour:any;
   ngOnInit(): void {
-    this.loadTravel();
+    this.route.paramMap.subscribe(params=>
+      {this.id=params.get('id');
+    });
+    this.getTourById(this.id);
   }
-ToulookList:any=[]; 
-  loadTravel(){
-    
-    const travelid=this.route.snapshot.paramMap.get('id');
-  this.tourService.getTourCurrentList(travelid).subscribe
-  (
-    data=>this.ToulookList=data
-    
-  );
-  }
-
+getTourById(id:any){
+  this.tourService.getTourCurrentList(id).subscribe((res)=>{
+    this.tour=res;
+  });
+}
 }
