@@ -10,7 +10,8 @@ export class AsiatoursComponent implements OnInit {
   constructor(private service:SharedService) { }
 
 AsiatoursList:any=[];
-
+totallenght:any;
+page:number=1;
   ngOnInit(): void {
     this.refreshAsiatours();
   }
@@ -18,7 +19,7 @@ AsiatoursList:any=[];
 refreshAsiatours(){
   this.service.getAsiaList().subscribe(data=>{
     this.AsiatoursList=data
-  
+  this.totallenght=data.length
   });
 }
 
