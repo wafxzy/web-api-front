@@ -11,6 +11,14 @@
     background-color: rgba(0, 0, 0, 0.8) !important;
     color: #ffffff !important;
   }
-  .logonav{ height: 50px;
-    width: 50px;
+  .logonav{ height: 40px;
+    color: #ffffff;
+    background-image: url('../logo.ico');
+    width: 40px;
+  }
+  .travellogospan{
+color: #85dd01;
+  }
+  .copyrights{
+    padding-left: 50px;
   }

@@ -20,6 +20,7 @@ import {SharedService} from './shared.service';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     RegisterComponent,
     ToulookComponent,
     HelpinfoComponent,
-    AlltoursComponent
+    AlltoursComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
