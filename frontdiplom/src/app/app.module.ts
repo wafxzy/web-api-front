@@ -17,10 +17,13 @@ import { HelpinfoComponent } from './helpinfo/helpinfo.component';
 import { AlltoursComponent } from './alltours/alltours.component';
 import {SharedService} from './shared.service';
 
+
+
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { HomeComponent } from './home/home.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,8 @@ import { HomeComponent } from './home/home.component';
     ToulookComponent,
     HelpinfoComponent,
     AlltoursComponent,
-    HomeComponent
+    HomeComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

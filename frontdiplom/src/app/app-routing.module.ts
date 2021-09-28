@@ -12,6 +12,9 @@ import {AlltoursComponent} from './alltours/alltours.component';
 import {ContacsComponent} from './contacs/contacs.component';
 import {HelpinfoComponent} from './helpinfo/helpinfo.component';
 import {RegisterComponent} from './register/register.component';
+import{HomeComponent} from './home/home.component';
+import{LoginComponent} from './login/login.component';
+import {PagenotfoundComponent} from './pagenotfound/pagenotfound.component'
 
 const routes: Routes = [
 {path:'asiatours', component:AsiatoursComponent  },
@@ -24,7 +27,8 @@ const routes: Routes = [
 {path:'contacs', component:ContacsComponent  },
 {path:'helpinfo', component:HelpinfoComponent  },
 {path:'register', component:RegisterComponent  },
-{path:'tour/:id', component:ToulookComponent  }
+{path:'tour/:id', component:ToulookComponent  },
+{path: "home",  component: HomeComponent}
 ];
 
 @NgModule({
