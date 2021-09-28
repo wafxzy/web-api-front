@@ -6,7 +6,7 @@ import {Observable, ObservedValuesFromArray} from 'rxjs';
   providedIn: 'root'
 })
 export class SharedService {
-  readonly ApiUrl="http://localhost:5000/api";
+  readonly ApiUrl="http://localhost:36881/api";
    
   constructor(private http:HttpClient) { }
 getAsiaList():Observable<any[]>{
@@ -15,7 +15,7 @@ return this.http.get<any>(this.ApiUrl+'/alltours');
 
 getTourCurrentList(id:any){
   
-  return this.http.get<any>('http://localhost:5000/api/alltours/'+id);
+  return this.http.get<any>('http://localhost:36881/api/alltours/'+id);
   
   
   }
